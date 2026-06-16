@@ -8,6 +8,8 @@ To analyze uncertainty at a finer granularity, **token-wise predictive entropy t
 
 Empirical results revealed that commonly used static uncertainty statistics provided little predictive value. Mean entropy, entropy variance, spike rate, and entropy jump magnitude all performed near chance level under stratified cross-validation. In contrast, **entropy drift**, defined as the difference between late-stage and early-stage predictive entropy, emerged as a strong discriminative signal, achieving a cross-validated **ROC-AUC** of approximately **0.80**.
 
+<img width="529" height="355" alt="entopy_drift" src="https://github.com/user-attachments/assets/8ad49bf5-f496-49d6-b042-29e0126ee3d6" />
+
 A consistent uncertainty regime was observed across generations: factual responses tended to exhibit *positive entropy drift*, whereas hallucinated responses displayed *negative entropy drift*. This finding suggests that hallucinations are not necessarily characterized by elevated uncertainty magnitudes, but rather by distinct **temporal uncertainty dynamics** that unfold during generation.
 
 Overall, the results indicate that uncertainty evolution contains substantially richer information than aggregate uncertainty statistics and highlight trajectory-based uncertainty modeling as a promising direction for **hallucination detection**, **reliability estimation**, **uncertainty quantification**, and **interpretability** research in modern LLMs.
